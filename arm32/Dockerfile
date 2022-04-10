@@ -7,4 +7,4 @@ WORKDIR /gnupru-2021.10
 ENV PREFIX=/usr/pru-gcc
 RUN ./download-and-prepare.sh && ./build.sh
 ENV PATH="${PATH}:/usr/pru-gcc/bin"
-RUN pru-gcc -v && rm ../gnupru -rf
+RUN pru-gcc -v && rm ../gnupru-2021.10 -rf
